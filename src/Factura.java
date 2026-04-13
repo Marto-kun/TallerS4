@@ -96,7 +96,7 @@ public class Factura {
 
 
     //Obtener Monto
-    public double obtenerMontoFactura(){
+    public double obtenerMontofactura(){
 
         return cantidadProducto * precio;
     }
