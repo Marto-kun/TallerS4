@@ -28,7 +28,7 @@ public class PerfilMedico {
     }
 
 
-    private int calcularEdad(){
+    public int calcularEdad(){
 
         LocalDate fechaAct = LocalDate.now();       //Fecha actual obtenida desde el sistema
 

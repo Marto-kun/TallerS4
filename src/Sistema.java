@@ -43,6 +43,28 @@ public class Sistema {
         return pm;
     }
 
+    public void imprimirInfoMedico(PerfilMedico pm){
+        System.out.println("---- Infomarcion Paciente ----");
+        System.out.println("Nombre: "+ pm.getNombre());
+        System.out.println("Apellido: "+ pm.getApellido());
+
+        if (pm.getSexo() == 1){
+            System.out.println("Sexo: Masculino");
+        }else{
+            System.out.println("Sexo: Femenino");
+        }
+
+        System.out.println("Altura: "+ pm.getAltura() + "cm");
+        System.out.println("Peso: "+ pm.getPeso()+ "kg");
+
+        System.out.println("Edad: "+ pm.calcularEdad());
+        System.out.println("Frecuencia caridaca maxima: "+pm.calcularFreCardiacaMaxima());
+
+
+
+    }
+
+
     public Factura crearFactura(){
 
         System.out.println("Ingrese los datos del paciente: ");

@@ -7,7 +7,12 @@ public class Main {
 
         PerfilMedico pm1 = sis.crearPerfilMedico();
 
+
+
+
         Factura fac = sis.crearFactura();
+
+
 
 
     }
