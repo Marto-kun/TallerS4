@@ -43,6 +43,26 @@ public class Sistema {
         return pm;
     }
 
+    public Factura crearFactura(){
+
+        System.out.println("Ingrese los datos del paciente: ");
+        System.out.print("Numero de pieza: ");
+        String numPieza = sc.next();
+
+        System.out.print("Descripcion de la pieza: ");
+        String descripcionPieza = sc.next();
+
+        System.out.print("Cantidad producto: ");
+        int cantidadProducto = sc.nextInt();
+
+        System.out.println("Precio: ");
+        double precio = sc.nextDouble();
+
+        Factura fac = new Factura(numPieza, descripcionPieza, cantidadProducto, precio);
+
+
+        return fac;
+    }
 
 
 }
