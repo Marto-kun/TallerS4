@@ -70,10 +70,10 @@ public class Factura {
     }
 
 
-    //Obtener Descripcion
+    //Obtener Numero pieza
     public String obtenerNumPieza(){
 
-        return descripcionPieza;
+        return numPieza;
     }
 
     //Obtener Descripcion
