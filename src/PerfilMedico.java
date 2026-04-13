@@ -4,19 +4,19 @@ public class PerfilMedico {
 
     private String nombre;
     private String apellido;
-    private char sexo;      //(M)asculino o (F)emenino
+    private int sexo;      //(M)asculino o (F)emenino
     private int anio;
     private int mes;
     private int dia;
-    private int altura;   //En centimetros
+    private double altura;   //En centimetros
     private double peso;  //En kilogramos
 
 
     /*
     Constuctor:
      */
-    public PerfilMedico(String nombre, String apellido, char sexo,
-                        int anio, int mes, int dia, int altura, double peso) {
+    public PerfilMedico(String nombre, String apellido, int sexo,
+                        int anio, int mes, int dia, double altura, double peso) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.sexo = sexo;
@@ -98,7 +98,7 @@ public class PerfilMedico {
         this.apellido = apellido;
     }
 
-    public char getSexo() {
+    public int getSexo() {
         return sexo;
     }
 
@@ -130,7 +130,7 @@ public class PerfilMedico {
         this.dia = dia;
     }
 
-    public int getAltura() {
+    public double getAltura() {
         return altura;
     }
 
