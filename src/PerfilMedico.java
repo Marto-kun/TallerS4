@@ -28,7 +28,7 @@ public class PerfilMedico {
     }
 
 
-    public int calcularEdad(){
+    public int calcularEdad() {
 
         LocalDate fechaAct = LocalDate.now();       //Fecha actual obtenida desde el sistema
 
@@ -49,7 +49,7 @@ public class PerfilMedico {
         return edadAnios;
     }
 
-    public int calcularFreCardiacaMaxima(){
+    public int calcularFreCardiacaMaxima() {
 
         int edad = calcularEdad();      //Llamada al metodo de calcular edad
 
@@ -58,19 +58,20 @@ public class PerfilMedico {
         return frecuenciaMax;
     }
 
-    public String calcularFreCardiacaEsperada(){
+    public String calcularFreCardiacaEsperada() {
 
         int freMax = calcularFreCardiacaMaxima();           //Llamada al metodo de frecuencia cardiaca maxima
         double freEspMin = freMax * 0.5;
         double freEspMax = freMax * 0.85;
 
-        String rango = "Rango: \nFrecuencia Minima: " + freEspMin + "\nFrecuencia Maxima: " + freEspMax;   //Cadena que muestra el rango de valores
-                                                                                                            // de frecuencias recomendadas
+        //Cadena que muestra el rango de valores de frecuencias recomendadas
+        String rango = "Rango: \nFrecuencia Minima: " + freEspMin +
+                "\nFrecuencia Maxima: " + freEspMax;
 
         return rango;
     }
 
-    public double calcularIMC(){
+    public double calcularIMC() {
 
         double alturaMetros = altura / 100;
 

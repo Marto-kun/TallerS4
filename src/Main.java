@@ -9,31 +9,46 @@ public class Main {
         System.out.println("Crear la factura: ");
         Factura fac = sis.crearFactura();
 
-        opc = Sistema.menu();
+        do {
+            opc = Sistema.menu();
 
-        switch (opc){
-            case 1:
-                //Imprimir Info Vehiculo
-                sis.imprimirInfoMedico(v1);
-                break;
+            switch (opc) {
+                case 1:
+                    //Imprimir Info Perfil Medico
+                    sis.imprimirInfoMedico(pm1);
+                    break;
 
-            case 2:
-                //Actualizar Info Vehiculo
-                sis.imp(v1);
-                break;
+                case 2:
+                    //Edad del paciente
+                    sis.imprimirEdad(pm1);
+                    break;
 
-            case 3:
-                //Imprimir la aceleracion del vehiculo
-                sis.imprimirAceleracion(v1);
-                break;
+                case 3:
+                    //Frecuencia Maxima
+                    sis.imprimirFrecuenciaCardiaca(pm1);
+                    break;
 
-            case 4:
-                //Imprimir la edad del dueño
-                sis.imprirEdadDuenio(v1);
-                break;
-        }
+                case 4:
+                    //IMC
+                    sis.imprimirIMC(pm1);
+                    break;
 
+                case 5:
+                    sis.mostrarDatosFactura(fac);
+                    break;
 
+                case 6:
+                    //Salir
+                    System.out.println("Gracias por usar nuestro sistema... Saliendo.");
+                    break;
+
+                default:
+                    //Opcion Invalida
+                    System.out.println("Opcion inválida, intentalo otra vez...");
+
+                    break;
+            }
+        } while (opc != 6);
 
 
     }

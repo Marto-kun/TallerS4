@@ -44,59 +44,58 @@ public class Factura {
         this.precio = precio;
     }
 
-    public void establecerDescricion(String descripcionPieza){
+    public void establecerDescricion(String descripcionPieza) {
         this.descripcionPieza = descripcionPieza;
 
     }
 
     //Establecer Cantidad
-    public void establecerCantidad(){
-        if (cantidadProducto > 0){
+    public void establecerCantidad() {
+        if (cantidadProducto > 0) {
             this.cantidadProducto = cantidadProducto;
-        } else{
+        } else {
             this.cantidadProducto = 0;
         }
     }
 
 
-
     //Establecer Precio
-    public void estrablecerPrecio(double precio){
-        if(precio > 0.0){
+    public void estrablecerPrecio(double precio) {
+        if (precio > 0.0) {
             this.precio = precio;
-        }else {
+        } else {
             this.precio = 0.0;
         }
     }
 
 
     //Obtener Numero pieza
-    public String obtenerNumPieza(){
+    public String obtenerNumPieza() {
 
         return numPieza;
     }
 
     //Obtener Descripcion
-    public String obtenerDescripcion(){
+    public String obtenerDescripcion() {
 
         return descripcionPieza;
     }
 
     //Obtener Cantidad
-    public int obtenerCantidad(){
+    public int obtenerCantidad() {
 
         return cantidadProducto;
     }
 
     //Obtener Precio
-    public double obtenerPrecio(){
+    public double obtenerPrecio() {
 
         return precio;
     }
 
 
     //Obtener Monto
-    public double obtenerMontofactura(){
+    public double obtenerMontofactura() {
 
         return cantidadProducto * precio;
     }
