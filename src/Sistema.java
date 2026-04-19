@@ -20,7 +20,7 @@ public class Sistema {
         System.out.print("Apellido: ");
         String apellido = sc.next();
 
-        System.out.print("Sexo (M o F): ");
+        System.out.print("Sexo (1 para M o 2 para F ): ");
         int sexo = sc.nextInt();
 
         System.out.print("Año de Nacimiento: ");
@@ -87,7 +87,7 @@ public class Sistema {
         System.out.print("Cantidad producto: ");
         int cantidadProducto = sc.nextInt();
 
-        System.out.println("Precio: ");
+        System.out.print("Precio: ");
         double precio = sc.nextDouble();
 
         Factura fac = new Factura(numPieza, descripcionPieza, cantidadProducto, precio);

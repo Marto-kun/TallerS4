@@ -4,7 +4,7 @@ public class PerfilMedico {
 
     private String nombre;
     private String apellido;
-    private int sexo;      //(M)asculino o (F)emenino
+    private int sexo;      //(1)Masculino o (2)Femenino
     private int anio;
     private int mes;
     private int dia;
